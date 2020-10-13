@@ -20,7 +20,7 @@ var carDetails = {
 /*
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
-
+let {color, make, model , year} = carDetails;
 //Code Here
 
 
@@ -35,7 +35,9 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+
+  let {title, firstName, lastName} = obj;
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -54,6 +56,15 @@ function greeting( obj ) {
 */
 
 //Code Here
+totalPopulation = function(object){
+  let {utah, california, texas, arizona} = object
+  return utah + california + texas + arizona
+  
+}
+
+
+
+
 
 
 
@@ -68,9 +79,12 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
-
+function ingredients(object){
+let {carb, fat, protein} = object
+let arr = []
+arr.push(carb, fat, protein)
+return arr
+}
 ////////// PROBLEM 5 //////////
 
 /*
@@ -86,6 +100,17 @@ function greeting( obj ) {
 */
 
 //Code Here
+function largeNumbers({first, second, third}){
+  if(first < second && first < third){
+    return first
+  } else if(second < first && second < third) {
+     return second
+  } else {
+    return third
+  }
+    
+  
+}
 
 
 
@@ -98,5 +123,15 @@ function greeting( obj ) {
 */
 
 //Code Here
+function numberGroups({a, b, c}){
+  let longestArr = [a, b, c];
+  let longest = [];
+  longestArr.forEach(function(element, index, array) {
+    if (element.length > longest.length){
+      longest = element
+    }
+  })
+return longest
+}
 
 
