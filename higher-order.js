@@ -110,7 +110,7 @@ let orderTotals = orders.map(e => e.price * (1 + e.tax))
 
 
 
-////////// PROBLEM 6 //////////
+////////// PROBLEM 6 ///////////
 
 // Do not edit the code below.
 const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},

@@ -194,7 +194,7 @@ function startsWithK(obj){
 
 
 
-////////// PROBLEM 8 //////////
+////////// PROBLEM 8 ///////////
 
 /*
   Write a function called hiddenTreasure that takes in an object.
